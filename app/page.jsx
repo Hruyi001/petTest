@@ -231,6 +231,10 @@ export default function Home() {
                 <strong>地址</strong>
                 <span>幸福路 88 号 1 层，近中心公园</span>
               </div>
+              <div className="contact-row">
+                <strong>到店时间</strong>
+                <span>可预约 10:00 至 20:00 到店，建议提前 1 天提交</span>
+              </div>
             </div>
             <form className="form" action="#" method="post">
               <div className="field">
@@ -259,9 +263,22 @@ export default function Home() {
                   <option>皮毛护理</option>
                 </select>
               </div>
-              <div className="field full">
-                <label htmlFor="time">期望时间</label>
-                <input id="time" name="time" placeholder="例如：本周六下午 3 点" />
+              <div className="field">
+                <label htmlFor="arrival-date">期望到店日期</label>
+                <input id="arrival-date" name="arrivalDate" type="date" />
+              </div>
+              <div className="field">
+                <label htmlFor="arrival-time">期望到店时段</label>
+                <select id="arrival-time" name="arrivalTime" defaultValue="">
+                  <option value="" disabled>
+                    请选择时段
+                  </option>
+                  <option>10:00 - 12:00</option>
+                  <option>12:00 - 14:00</option>
+                  <option>14:00 - 16:00</option>
+                  <option>16:00 - 18:00</option>
+                  <option>18:00 - 20:00</option>
+                </select>
               </div>
               <div className="field full">
                 <label htmlFor="note">宠物情况</label>
