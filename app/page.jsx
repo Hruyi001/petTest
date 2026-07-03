@@ -242,6 +242,23 @@ export default function Home() {
                 <input id="name" name="name" placeholder="例如：王女士" />
               </div>
               <div className="field">
+                <label htmlFor="arrival-date">期望到店日期</label>
+                <input id="arrival-date" name="arrivalDate" type="date" />
+              </div>
+              <div className="field">
+                <label htmlFor="arrival-time">期望到店时段</label>
+                <select id="arrival-time" name="arrivalTime" defaultValue="">
+                  <option value="" disabled>
+                    请选择时段
+                  </option>
+                  <option>10:00 - 12:00</option>
+                  <option>12:00 - 14:00</option>
+                  <option>14:00 - 16:00</option>
+                  <option>16:00 - 18:00</option>
+                  <option>18:00 - 20:00</option>
+                </select>
+              </div>
+              <div className="field">
                 <label htmlFor="phone">联系电话</label>
                 <input id="phone" name="phone" placeholder="请输入手机号" />
               </div>
@@ -261,23 +278,6 @@ export default function Home() {
                   <option>猫咪舒缓洗护</option>
                   <option>精修造型</option>
                   <option>皮毛护理</option>
-                </select>
-              </div>
-              <div className="field">
-                <label htmlFor="arrival-date">期望到店日期</label>
-                <input id="arrival-date" name="arrivalDate" type="date" />
-              </div>
-              <div className="field">
-                <label htmlFor="arrival-time">期望到店时段</label>
-                <select id="arrival-time" name="arrivalTime" defaultValue="">
-                  <option value="" disabled>
-                    请选择时段
-                  </option>
-                  <option>10:00 - 12:00</option>
-                  <option>12:00 - 14:00</option>
-                  <option>14:00 - 16:00</option>
-                  <option>16:00 - 18:00</option>
-                  <option>18:00 - 20:00</option>
                 </select>
               </div>
               <div className="field full">
